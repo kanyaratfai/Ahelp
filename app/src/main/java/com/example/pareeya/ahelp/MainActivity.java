@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private void confirmData() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setIcon(R.drawable.help555_03);
+        builder.setIcon(R.drawable.a55);
         builder.setTitle("โปรดตรวจสอบข้อมูล");
         builder.setMessage("ชื่อ-นามสกุล = " + nameString + "\n" +
                             "เบอร์โทร = " + MyPhoneString);
