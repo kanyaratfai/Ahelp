@@ -21,7 +21,7 @@
         android:textSize="@dimen/h2"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
-        android:background="@color/colorPrimaryDark"
+        android:background="#1c6ab3"
         android:textStyle="bold"
         android:onClick="clickSetting" />
 
@@ -54,7 +54,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#22910c" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -64,7 +65,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#cd2121" />
 
         </LinearLayout>
 
@@ -88,7 +90,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#22910c" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -98,7 +101,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#cd2121" />
 
         </LinearLayout>
 
@@ -122,7 +126,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#22910c" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -132,7 +137,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#cd2121" />
 
         </LinearLayout>
 
@@ -156,7 +162,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#22910c" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -166,7 +173,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#cd2121" />
 
         </LinearLayout>
 
@@ -190,7 +198,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#22910c" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -200,7 +209,8 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/h4"
                 android:textStyle="bold"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:background="#cd2121" />
 
         </LinearLayout>
 
@@ -257,7 +267,8 @@
             android:layout_weight="1"
             android:textSize="@dimen/h4"
             android:textStyle="bold"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:background="#22910c" />
 
         <Button
             android:layout_width="wrap_content"
@@ -267,7 +278,8 @@
             android:layout_weight="1"
             android:textSize="@dimen/h4"
             android:textStyle="bold"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:background="#cd2121" />
 
     </LinearLayout>
 
