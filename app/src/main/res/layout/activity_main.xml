@@ -15,15 +15,16 @@
         android:layout_height="wrap_content"
         android:text="@string/Login"
         android:id="@+id/button"
-        android:onClick="clickLoginMain"
         android:padding="25dp"
         android:textSize="@dimen/h2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="false"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:background="#1c6ab3" />
+        android:background="#1c6ab3"
+        android:forceHasOverlappingRendering="false"
+        android:onClick="clickSaveData" />
 
     <LinearLayout
         android:orientation="vertical"

@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     //Explicit
     private MyManage myManage;
     private EditText nameEditText, MyPhoneEditText;
+    private String nameString, MyPhoneString;
 
 
     @Override
@@ -27,8 +28,30 @@ public class MainActivity extends AppCompatActivity {
         myManage = new MyManage(this);
 
     }//Main Method
-    public void clickLoginMain (View view){
-        startActivity(new Intent(MainActivity.this,ContentActivity.class));
+    public void clickSaveData(View view) {
 
-    }//clickLoginManin
+        nameString = nameEditText.getText().toString().trim();
+        MyPhoneString = MyPhoneEditText.getText().toString().trim();
+
+        //Check Space
+
+        if (checkSpace()) {
+            //Have Space ถ้ามีความว่างเปล่า
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this, "กรอกข้อมูลไม่ครบ", "กรุณากรอกข้อมูลใหม่ คะ");
+        } else {
+            confirmData();
+
+        }
+
+    }//clickSaveData
+
+    private void confirmData() {
+    }
+
+    private boolean checkSpace() {
+        return nameString.equals("") ||
+                MyPhoneString.equals("");
+    }
+
 }//Main Class
