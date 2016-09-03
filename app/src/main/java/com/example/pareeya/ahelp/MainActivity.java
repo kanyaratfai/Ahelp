@@ -1,5 +1,7 @@
 package com.example.pareeya.ahelp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -47,6 +49,32 @@ public class MainActivity extends AppCompatActivity {
     }//clickSaveData
 
     private void confirmData() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setIcon(R.drawable.help555_03);
+        builder.setTitle("โปรดตรวจสอบช้อมูล");
+        builder.setMessage("Name = " + nameString + "\n" +
+                            "MyPhone = " + MyPhoneString);
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.setPositiveButton("Confim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                savesqlite();
+
+                dialog.dismiss();
+            }
+        });
+
+    }
+
+    private void savesqlite() {
+
     }
 
     private boolean checkSpace() {
