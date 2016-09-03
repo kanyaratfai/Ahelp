@@ -53,16 +53,16 @@ public class MainActivity extends AppCompatActivity {
         builder.setCancelable(false);
         builder.setIcon(R.drawable.help555_03);
         builder.setTitle("โปรดตรวจสอบข้อมูล");
-        builder.setMessage("Name = " + nameString + "\n" +
-                            "MyPhone = " + MyPhoneString);
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        builder.setMessage("ชื่อ-นามสกุล = " + nameString + "\n" +
+                            "เบอร์โทร = " + MyPhoneString);
+        builder.setNegativeButton("ยกเลิก", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
             }
         });
 
-        builder.setPositiveButton("Confim", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("ยืนยัน", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 savesqlite();
