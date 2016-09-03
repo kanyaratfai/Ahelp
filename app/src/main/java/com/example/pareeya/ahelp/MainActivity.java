@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.help555_03);
-        builder.setTitle("โปรดตรวจสอบช้อมูล");
+        builder.setTitle("โปรดตรวจสอบข้อมูล");
         builder.setMessage("Name = " + nameString + "\n" +
                             "MyPhone = " + MyPhoneString);
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
