@@ -7,11 +7,17 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Explicit
+    private MyManage myManage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }//Main Methot
+
+        myManage = new MyManage(this);
+
+    }//Main Method
     public void clickLoginMain (View view){
         startActivity(new Intent(MainActivity.this,ContentActivity.class));
 

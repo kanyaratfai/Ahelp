@@ -23,7 +23,8 @@
         android:textColor="#ffffff"
         android:background="#1c6ab3"
         android:textStyle="bold"
-        android:onClick="clickSetting" />
+        android:onClick="clickSetting"
+        android:padding="15dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -32,13 +33,14 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentTop="false"
         android:id="@+id/linearLayout"
-        android:padding="15dp"
         android:background="#e0e0fffe">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp">
 
             <EditText
                 android:layout_width="250dp"
@@ -74,7 +76,9 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp">
 
             <EditText
                 android:layout_width="250dp"
@@ -110,7 +114,9 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp">
 
             <EditText
                 android:layout_width="250dp"
@@ -146,7 +152,9 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp">
 
             <EditText
                 android:layout_width="250dp"
@@ -182,7 +190,9 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp">
 
             <EditText
                 android:layout_width="250dp"
@@ -222,12 +232,15 @@
         android:text="@string/message"
         android:id="@+id/textView"
         android:textSize="@dimen/h3"
-        android:padding="15dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:background="#e0e0fffe"
-        android:textColor="#535353" />
+        android:textColor="#535353"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -238,11 +251,14 @@
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:padding="15dp"
         android:background="#e0e0fffe"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#535353" />
+        android:textColor="#535353"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -251,7 +267,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView2"
-        android:background="#e0e0fffe">
+        android:background="#e0e0fffe"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp">
 
         <EditText
             android:layout_width="250dp"
