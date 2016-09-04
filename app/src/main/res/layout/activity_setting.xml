@@ -16,7 +16,6 @@
         android:text="@string/ok_set"
         android:id="@+id/button14"
         android:layout_gravity="bottom"
-        android:layout_weight="1"
         android:layout_alignParentBottom="true"
         android:textSize="@dimen/h2"
         android:layout_centerHorizontal="true"

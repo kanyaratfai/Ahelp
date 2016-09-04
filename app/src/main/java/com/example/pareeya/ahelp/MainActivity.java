@@ -3,8 +3,11 @@ package com.example.pareeya.ahelp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -28,8 +31,30 @@ public class MainActivity extends AppCompatActivity {
 
 
         myManage = new MyManage(this);
+        //Check SQLite
+        if (checkSQLite()) {
+            startActivity(new Intent(MainActivity.this,HomeActivity.class));
+        }
 
     }//Main Method
+
+    private boolean checkSQLite() {
+
+        boolean result = false;
+
+        SQLiteDatabase sqLiteDatabase = openOrCreateDatabase(MyOpenHelper.database_name,
+                MODE_PRIVATE, null);
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM userTABLE", null);
+        cursor.moveToFirst();//บนลงล่าง
+        if (cursor.getCount() !=0) {
+            result = true;
+        }
+
+        Log.d("4SepV1", "Result==>" + result);
+
+        return result;
+    }
+
     public void clickSaveData(View view) {
 
         nameString = nameEditText.getText().toString().trim();
