@@ -13,7 +13,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Explicit
+    //Explicit ประกาศตัวแปร
     private MyManage myManage;
     private EditText nameEditText, MyPhoneEditText;
     private String nameString, MyPhoneString;
@@ -31,20 +31,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         myManage = new MyManage(this);
-        //Check SQLite
+        //Check SQLite ถ้า Login แล้ว เมื่อเข้าแอพครั้งต่อไปให้เข้าหน้า Home
         if (checkSQLite()) {
             startActivity(new Intent(MainActivity.this,HomeActivity.class));
+            finish();
         }
 
     }//Main Method
 
-    private boolean checkSQLite() {
+    private boolean checkSQLite() {//ตรวจสอบ SQLite
 
         boolean result = false;
 
         SQLiteDatabase sqLiteDatabase = openOrCreateDatabase(MyOpenHelper.database_name,
                 MODE_PRIVATE, null);
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM userTABLE", null);
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM userTABLE", null);//เลือก จากตารางผู้ใช้และค่าว่าง
         cursor.moveToFirst();//บนลงล่าง
         if (cursor.getCount() !=0) {
             result = true;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
-    public void clickSaveData(View view) {
+    public void clickSaveData(View view) {//บันทึกข้อมูล
 
         nameString = nameEditText.getText().toString().trim();
         MyPhoneString = MyPhoneEditText.getText().toString().trim();
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     }//clickSaveData
 
-    private void confirmData() {
+    private void confirmData() {//การยืนยันข้อมูล
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.a55);
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private boolean checkSpace() {
+    private boolean checkSpace() {//ตรวจสอบพื้นที่
         return nameString.equals("") ||
                 MyPhoneString.equals("");
     }
