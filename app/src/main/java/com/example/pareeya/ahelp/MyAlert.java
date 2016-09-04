@@ -15,8 +15,7 @@ public class MyAlert {
         AlertDialog.Builder builder = new  AlertDialog.Builder(context);
         builder.setCancelable(false);
         builder.setIcon(R.drawable.a55);
-        builder.setTitle(strTitle);
-        builder.setMessage(strMessage);
+        builder.setTitle(strTitle);        builder.setMessage(strMessage);
         builder.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Login"
         android:id="@+id/button"
-        android:padding="25dp"
+        android:padding="15dp"
         android:textSize="@dimen/h2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -33,7 +33,8 @@
         android:layout_above="@+id/button"
         android:background="#b6ebfdfd"
         android:weightSum="1"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp">
 
         <ImageView
             android:layout_width="wrap_content"

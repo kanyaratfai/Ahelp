@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("ยืนยัน", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                savesqlite();
+                SaveSQLite();
 
                 dialog.dismiss();
             }
@@ -74,7 +74,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void savesqlite() {
+    private void SaveSQLite() {
+
+        myManage.addValueToSQLite(nameString, MyPhoneString);//เพิ่มข้อมูลเข้าไปในฐานข้อมูล
+        startActivity(new Intent(MainActivity.this,ContentActivity.class));
+
 
     }
 
